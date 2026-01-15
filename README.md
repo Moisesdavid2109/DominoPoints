@@ -1,22 +1,14 @@
-# Dominó - Contador de Partidas (Expo)
+# Domino Points (Beta)
 
-Proyecto en JavaScript/JSX y español.
+Aplicación móvil para llevar el control de puntos en partidas de dominó,
+evitando el uso de papel y lápiz.
 
-## Estructura
-- src/pantallas: Vistas principales
-- src/componentes: UI reutilizable
-- src/contexto: Estado global de partida
-- src/servicios: Almacenamiento local con AsyncStorage
-- src/utilidades: Lógica de puntajes
+## Características
+- Registro de jugadores
+- Conteo automático de puntos
+- Control de partidas
+- Interfaz simple y rápida
 
-## Desarrollo
-```bash
-cd miAppDomino
-npx expo install @react-native-async-storage/async-storage
-npx expo start
-```
-
-## Flujo inicial
-- En Inicio selecciona modo y límite
-- Se crea partida y se navega al marcador
-- En Marcador puedes registrar puntos (ejemplo incluido)
+## Tecnologías
+- React Native
+- JavaScript
