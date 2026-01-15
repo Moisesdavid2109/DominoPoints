@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "miAppDomino",
-    "slug": "miAppDomino",
+    "name": "Domino Points",
+    "slug": "domino-points",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -20,10 +20,16 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.moisesdavid2109.dominopoints"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f62e8de-92b6-4a93-b110-e42bcff0b74f"
+      }
     }
   }
 }
