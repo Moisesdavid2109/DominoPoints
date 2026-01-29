@@ -6,6 +6,7 @@ import FormularioParticipantes from './src/pantallas/FormularioParticipantes';
 import MarcadorPantalla from './src/pantallas/MarcadorPantalla';
 import SeleccionModoPantalla from './src/pantallas/SeleccionModoPantalla';
 import HistorialPantalla from './src/pantallas/HistorialPantalla';
+
 function Contenido() {
   const { vista, crearPartida, configurarLimites, irAlFormulario } = usePartida();
   if (vista === 'formulario') return <FormularioParticipantes />;

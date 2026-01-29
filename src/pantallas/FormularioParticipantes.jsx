@@ -17,7 +17,7 @@ export default function FormularioParticipantes() {
 
   const puedeContinuar = useMemo(() => {
     if (esParejas) {
-      // Solo se requieren los nombres de los equipos
+      
       return nombresEquipos.length === 2 && nombresEquipos.every((n) => n && n.trim().length > 0);
     }
     return nombresJugadores.length === 4 && nombresJugadores.every((n) => n && n.trim().length > 0);
@@ -25,7 +25,7 @@ export default function FormularioParticipantes() {
 
   const guardar = () => {
     let nuevosJugadores = jugadores;
-    // Si no hay jugadores (caso parejas), crearlos
+    
     if (nuevosJugadores.length !== 4) { 
       nuevosJugadores = [
         { id: 'j1', nombre: nombresJugadores[0] || 'Jugador 1' },
@@ -39,7 +39,7 @@ export default function FormularioParticipantes() {
     actualizarJugadores(nuevosJugadores);
 
     if (esParejas) {
-      // Asignar miembros: primeros dos al Equipo 1, últimos dos al Equipo 2
+      
       const equipo1Miembros = [nuevosJugadores[0].id, nuevosJugadores[1].id];
       const equipo2Miembros = [nuevosJugadores[2].id, nuevosJugadores[3].id];
       const nuevosEquipos = equipos.map((e, idx) => ({

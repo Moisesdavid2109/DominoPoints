@@ -6,8 +6,8 @@ const EstadoInicial = {
   jugadores: [],         // [{ id, nombre }]
   equipos: [],           // [{ id, nombre, miembros: [id,id] }]
   limitePuntos: 100,     // 50 | 75 | 100 | 200
-  rondas: [],            // [{ id, puntos: { participanteId: number }, fecha }]
-  ganador: null,         // { tipo: 'jugador'|'equipo', id }
+  rondas: [],            
+  ganador: null,        
 };
 
 function reducer(state, action) {
